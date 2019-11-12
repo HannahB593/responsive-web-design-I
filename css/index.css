@@ -1,3 +1,247 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+ 
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+ 
+/* Your code starts here! */
+ 
+.content {
+    width: 1122px;
+}
+ 
+.container {
+    padding: 10x;
+    display: flex; 
+    flex-direction: row; 
+ 
+    
+}
+ 
+.logo {
+    float: right;
+    padding: 10px; 
+    border: 0; 
+    margin: 10px 10px 10px 10px;
+     
+  
+}
+ 
+nav {
+    float: left; 
+    align-items: center; 
+    justify-content: space-around; 
+ 
+}
+ 
+nav ul {
+    margin: 25px;
+    border: 0px; 
+    padding: 0px;
+    list-style: none; 
+    display: flex; 
+    justify-content: space-evenly;
+    
+}
+ 
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform; none; 
+    padding: 0px 30px 0px 0px; 
+}
+ 
+/* Innovation on Demand Writing and Image */ 
+.header-container {
+    display:flex;
+    justify-content: space-evenly; 
+}
+
+.titleandbutton {
+    
+}
+.titleandbutton h1 {
+    font-family: Bangers; 
+    font-size: 70px; 
+    padding: 0px;
+    margin: 0px; 
+    align-content: center; 
+}
+
+.header-container button {
+    padding: 0px; 
+    margin: 20px; 
+    border: 1px solid black;
+    font-family: 'Titillium Web';
+    vertical-align: text-bottom; 
+    background-color: none; 
+    align-content: center; 
+}
+
+
+
+/*
+.header-container {
+  margin: 10px 20px 10px 20px; 
+  display: flex; 
+  justify-content: space space-evenly;
+  
+}
+ 
+.header {
+    display: inline-block;
+    flex-direction: row; 
+    text-align: center;
+    padding: 10px 20x 10px 20px ; 
+    border: 20px;
+    margin: 10px;
+ }
+ 
+ .header h1 {
+     font-family: Bangers;
+     font-size: 72px;
+     padding: 50px 50px; 
+ }
+ 
+ 
+.introImg {
+    
+    padding: 30px 80px 30px 80px;
+    display: inline-block; 
+    margin:  20x; 
+}  
+ 
+.button {
+    padding: 5px 40px 5px;
+    border: 1px solid black;
+    font-family: 'Titillium Web';
+    vertical-align: text-bottom; 
+    background-color: none; 
+}
+*/ 
+ 
+.topContent {
+    border-top: dotted 2px black; 
+    padding: 30px 0px 30px; 
+    margin-top: 20px; 
+} 
+ 
+.topContent .features {
+    display: inline-block; 
+    width: 49%;
+    margin-right: 5px;  
+}
+ 
+.topContent .about {
+    display: inline-block;
+    width: 49%; 
+}
+ 
+.middle-img {
+    display: block; 
+    width: 100%; 
+    margin-bottom: 30px; 
+}
+ 
+.bottomContent {
+    border-bottom: dotted 2px black; 
+    padding: 20px 0px 30px; 
+    margin-bottom: 20px;  
+}
+ 
+.bottomContent .services {
+    display: inline-block; 
+    width: 30%; 
+    margin-right: 29px; 
+}
+ 
+.bottomContent .product {
+    display: inline-block;
+    width: 30%;
+    margin-right: 29px; 
+}
+ 
+.bottomContent .vision {
+    display: inline-block;
+    width: 30%;
+}
+ 
+ 
+.contact {
+    margin: 40px 0;
+}
+ 
+ 
+footer {
+    text-align: center; 
+    margin: 40px 0px; 
+    padding-bottom: 40px; 
+}
+ 
+ 
+ 
+ 
+ 
