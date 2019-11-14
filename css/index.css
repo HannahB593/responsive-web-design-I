@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
@@ -6,7 +5,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
- 
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,55 +60,59 @@ html, body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
- 
+
+
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
+    font-weight: bold;
 }
  
+*/ 
 
 /* Your code starts here! */
+
 #wrapper {
 	width: 1024px;
-	margin: 0 auto;
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px; 
 }
 
 header {
+    margin: 20px;
 	width: 100%;
 	padding: 10px 20px 60px 20px;
 	text-align: center;
-	padding-top: 60px;
+    padding-top: 60px;
 }
 
 header nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 1122px;
     z-index: 1;
     background: white; 
 	transition-property: padding;
 	transition-duration: 0.5s;
-	padding: 0px 0;
+    padding: 0px 0;
+    
 }
 
-nav:hover {
-	transition-property: padding;
-	transition-duration: 0.5s;
-	padding: 10px 0;
-}
 
 header nav a {
 	display: inline-block;
 	color: #888;
 	text-decoration: none;
 	font-weight: 400;
-	padding: 30px;
+    padding: 30px;
+     
+    align-items: center;
 }
 
 nav a:hover {
-	transition-property: color, font-weight;
+	transition-property: color;
 	transition-duration: 0.5s, 0.5s;
 	color: #fff;
 	font-weight: bold;
@@ -119,17 +123,25 @@ nav a:hover {
 	background: url("https://i.imgur.com/RoKbjZH.png");
 	width: 183px;
 	height: 36px;
-	margin-left: 100px;
-	vertical-align: middle;
+    margin: 10px 20px 10px 20px; 
+    vertical-align: right;
+    
 }
 
 header .iov {
 	display: inline-block;
-	font-size: 75px;
+    font-size: 75px;
+    
 	text-align: center;
 	vertical-align: middle;
 	margin-top: 50px;
-	margin-right: 60px;
+    margin-right: 60px;
+    
+    
+} 
+
+h1 {
+    color: cadetblue;
 }
 
 .header-image {
@@ -156,135 +168,14 @@ header .iov {
 .button:hover {
 	cursor: pointer;
 }
-/* 
-.content {
-    width: 1122px;
-}
- 
-/* Logo and top nav bar */ 
-/* .container {
-    padding: 10px 20px 60px 20px; 
-    text-align: center;
-    border-bottom: 1px solid #000;
-    width: 100%;    
-}
-
-header {
-    width: 100%;
-    padding: 10px 20px 60px 20px;
-    text-align: center;
-    border-bottom: 1px solid #000;
-}
-
-header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; 
-    border-bottom: 1px solid #ccc;
-    transition-duration: 0.5s;
-    padding: 0px 0;  
-}
- 
- header nav a {
-     display: inline-block;
-     text-decoration: none;
-     font-weight: 400px; 
-     padding: 30px;
- }
-
- nav a:hover {
-     transition-property: color, font-weight;
-     transition-duration: 0.5s, 0.5s;
-     color: #fff;
-     font-weight: bold; 
-
- }
 
 
- 
-.logo {
-    float: right;
-    padding: 10px; 
-    
-      
-}
- 
-/* Innovation on Demand Writing and Image */ 
-/*.header-container {
-    display:flex;
-    justify-content: space-evenly; 
-}
-
-.titleandbutton {
-    
-}
-.titleandbutton h1 {
-    font-family: Bangers; 
-    font-size: 70px; 
-    padding: 0px;
-    margin: 0px; 
-    align-content: center; 
-}
-
-.header-container button {
-    padding: 0px; 
-    margin: 20px; 
-    border: 1px solid black;
-    font-family: 'Titillium Web';
-    vertical-align: text-bottom; 
-    background-color: none; 
-    align-content: center; 
-}
-*/ 
-
-
-
-/*
-.header-container {
-  margin: 10px 20px 10px 20px; 
-  display: flex; 
-  justify-content: space space-evenly;
-  
-}
- 
-.header {
-    display: inline-block;
-    flex-direction: row; 
-    text-align: center;
-    padding: 10px 20x 10px 20px ; 
-    border: 20px;
-    margin: 10px;
- }
- 
- .header h1 {
-     font-family: Bangers;
-     font-size: 72px;
-     padding: 50px 50px; 
- }
- 
- 
-.introImg {
-    
-    padding: 30px 80px 30px 80px;
-    display: inline-block; 
-    margin:  20x; 
-}  
- 
-.button {
-    padding: 5px 40px 5px;
-    border: 1px solid black;
-    font-family: 'Titillium Web';
-    vertical-align: text-bottom; 
-    background-color: none; 
-}
-*/ 
+ /* top content */ 
  
 .topContent {
     border-top: dotted 2px black; 
     padding: 30px 0px 30px; 
-    margin-top: 20px; 
+    margin: 20px 30px 20px 30px;  
 } 
  
 .topContent .features {
@@ -302,6 +193,12 @@ header nav {
     display: block; 
     width: 100%; 
     margin-bottom: 30px; 
+}
+h2 {
+    padding: 10px 0px 10px 0px; 
+}
+p {
+    padding: 10px;
 }
  
 .bottomContent {
@@ -329,7 +226,8 @@ header nav {
  
  
 .contact {
-    margin: 40px 0;
+    margin: 40px 0px 40px 0px;
+    padding: 30px; 
 }
  
  
@@ -338,8 +236,224 @@ footer {
     margin: 40px 0px; 
     padding-bottom: 40px; 
 }
- 
- 
- 
- 
- 
+
+@media (max-width: 800px){
+   
+    
+    #wrapper {
+        width: 800px;
+        height: 400px; 
+        align-items: center; 
+    }
+    
+    header {
+     display: fixed; 
+     text-align: center; 
+     
+
+
+    }
+    nav .logo {
+        display: inline-block;
+        align-content: center; 
+        margin-left: auto;
+        margin-right: auto; 
+        
+       
+    }   
+    
+    
+
+
+    header nav {
+        width: 800px;
+        height: 180px;
+        display: block; 
+      
+         
+       
+
+    }
+
+    header nav a {
+        display: fixed;
+        font-weight: 200px;
+        margin: 30px 10px 30px 10px; 
+        padding: 10px;
+        width: 100px;
+    }
+
+   
+        
+  
+    header .iov {
+        text-align: center; 
+        vertical-align: middle; 
+        margin-top: 120px; 
+    }
+
+    .header-image {
+        display: none; 
+        background: none; 
+    }
+
+    .topContent {
+        margin: 10px 10px 10px 10px; 
+        
+    }
+    
+    .topContent .features {
+        padding: 20px 10px 20px 10px; 
+    }
+
+    .topContent .about {
+        padding: 20px 10px 20px 10px; 
+    }
+
+    .middle-img {
+        padding: 20px 10px 20px 10px; 
+        align-content: center; 
+    }
+
+    h2 {
+        padding: 2px;
+    }
+
+    p {
+        padding: 2px; 
+    }
+
+    .topContent .services {
+        padding: 20px 0px 20px 0px; 
+        width: 15px;
+    }
+
+    .topContent .product {
+        padding: 20px 0px 20px 0px; 
+        width: 15px;
+    }
+
+    .topContent .vision {
+        padding: 20px 0px 20px 0px; 
+        width: 15px;
+    }
+
+    .contact {
+        margin:40px 10px 40px 10px;
+
+    }
+
+    .footer {
+        margin: 20px 10px 20px 10px; 
+        padding: 20px 10px 20px 10px;
+        font: 40%; 
+        height: 30px;
+    }
+}
+
+
+
+@media (max-width: 500px){
+
+    #wrapper {
+        width: 500px; 
+    }
+   
+   
+
+    header nav {
+        width: 500px;
+        height: 300px;
+        display: flex; 
+        flex-direction: column-reverse;
+        
+         
+        
+    }
+
+    header nav a {
+        margin: 5px 0px 5px 0px;
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto; 
+        margin-right: auto ; 
+        width: 8em;
+        align-content: center;  
+        
+    }
+
+    nav .logo {
+        display: inline-block; 
+        align-content: center; 
+        margin-left: auto;
+        margin-right: auto; 
+    
+    }
+
+    header .iov {
+        text-align: center; 
+        position: relative; 
+        top: 200px; 
+    }
+
+    .topContent {
+        position: relative; 
+        top: 160px; 
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .middle-img {
+        margin: 200px 0px 0px 0px; 
+    }
+
+    .bottomContent {
+        position: relative;
+        padding: 0px; 
+        margin: 0px; 
+        top: 80px;
+    }
+
+    h2 {
+        padding: 0px;
+    }
+
+    p {
+        padding: 0;
+        
+    }
+
+    .bottomContent .services {
+        margin-left:5px;
+        margin-right: 10px;
+    }
+
+    .bottomContent .product {
+        margin-right: 10px; 
+    }
+
+    .bottomContent .vision {
+        margin-right: 10px;
+        
+    }
+
+    .contact {
+        text-align: center; 
+        top: 400px; 
+        margin: 80px 0px 80px 0px; 
+        padding: 20px; 
+        
+    }
+    footer {
+        top: 100px; 
+    }
+    address {
+        margin: 10px; 
+        padding: 10px; 
+        top: 20px; 
+    }
+
+
+
+}
