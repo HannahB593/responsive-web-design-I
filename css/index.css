@@ -1,25 +1,90 @@
-
-
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -28,291 +93,298 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 body {
     line-height: 1;
 }
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
     content: none;
 }
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
- 
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
 }
- 
-html, body {
+
+html,
+body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: "Titillium Web", sans-serif;
 }
 
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Bangers", cursive;
     letter-spacing: 1px;
     margin-bottom: 1px;
     font-weight: bold;
 }
- 
-*/ 
 
 /* Your code starts here! */
 
+.navandlogo {
+    width: 100%;
+}
+
 #wrapper {
-	width: 1024px;
-    margin: 0 auto;
-    padding: 10px 20px 10px 20px; 
+    padding: 10px;
+    border: 0;
+    margin: 0px 0px 0px 0px;
 }
 
-header {
-    margin: 20px;
-	width: 100%;
-	padding: 10px 20px 60px 20px;
-	text-align: center;
-    padding-top: 60px;
+#wrapper nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-header nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 1122px;
-    z-index: 1;
-    background: white; 
-	transition-property: padding;
-	transition-duration: 0.5s;
-    padding: 0px 0;
-    
+#wrapper nav li {
+    display: inline-block;
+    margin: 20px 10px 20px 10px;
 }
 
-
-header nav a {
-	display: inline-block;
-	color: #888;
-	text-decoration: none;
-	font-weight: 400;
-    padding: 30px;
-     
-    align-items: center;
-}
-
-nav a:hover {
-	transition-property: color;
-	transition-duration: 0.5s, 0.5s;
-	color: #fff;
-	font-weight: bold;
+nav a {
+    padding: 25px;
+    color: gray;
+    text-decoration: none;
 }
 
 .logo {
-	display: inline-block;
-	background: url("https://i.imgur.com/RoKbjZH.png");
-	width: 183px;
-	height: 36px;
-    margin: 10px 20px 10px 20px; 
-    vertical-align: right;
-    
+    height: 35px;
+    width: 168px;
+    margin-right: 5px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
-header .iov {
-	display: inline-block;
-    font-size: 75px;
-    
-	text-align: center;
-	vertical-align: middle;
-	margin-top: 50px;
-    margin-right: 60px;
-    
-    
-} 
+/* Header Innovation on Demand and Image */
 
-h1 {
-    color: cadetblue;
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+    margin: 20px;
 }
 
-.header-image {
-	display: inline-block;
-	background: url("https://i.imgur.com/Hw8avII.png");
-	vertical-align: middle;
-	width: 379px;
-	height: 379px;
-	margin-left: 60px;
-	margin-top: 50px;
+.iov {
+    display: inline-flex;
+    padding: 20px;
+    margin: 20px;
+}
+
+.iov h1 {
+    color: black;
+    font-size: 90px;
 }
 
 .button {
-	display: block;
-	width: 180px;
-	height: 30px;
-	font-size: 15px;
-	border: 1px solid black;
-	padding: 5px 20px;
-	margin: 0 auto;
-	margin-top: 30px;
+    font-size: 0.9rem;
+    border: 2px solid black;
+    padding: 8px 40px 8px 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.button:hover {
-	cursor: pointer;
+.containerforimage {
+    padding: 20px;
+}
+.header-image {
+    display: inline-flex;
+    padding: 20px;
 }
 
+/* top content */
 
- /* top content */ 
- 
 .topContent {
-    border-top: dotted 2px black; 
-    padding: 30px 0px 30px; 
-    margin: 20px 30px 20px 30px;  
-} 
- 
-.topContent .features {
-    display: inline-block; 
-    width: 49%;
-    margin-right: 5px;  
+    border-top: dotted 2px black;
+    padding: 30px 20px 30px 20px;
+    margin: 20px 10px 20px 30px;
 }
- 
+
+.topContent .features {
+    display: inline-block;
+    width: 49%;
+    margin-right: 10px;
+}
+
 .topContent .about {
     display: inline-block;
-    width: 49%; 
+    width: 49%;
 }
- 
+
 .middle-img {
-    display: block; 
-    width: 100%; 
-    margin-bottom: 30px; 
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
 }
 h2 {
-    padding: 10px 0px 10px 0px; 
+    padding: 10px 0px 10px 0px;
 }
 p {
     padding: 10px;
 }
- 
+
+/* Bottom Content */
+
 .bottomContent {
-    border-bottom: dotted 2px black; 
-    padding: 20px 0px 30px; 
-    margin-bottom: 20px;  
+    border-bottom: dotted 2px black;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
- 
+
 .bottomContent .services {
-    display: inline-block; 
-    width: 30%; 
-    margin-right: 29px; 
+    display: inline-block;
+    width: 30%;
+    margin-left: 30px;
 }
- 
+
 .bottomContent .product {
     display: inline-block;
     width: 30%;
-    margin-right: 29px; 
+    margin-left: 30px;
 }
- 
+
 .bottomContent .vision {
     display: inline-block;
     width: 30%;
+    margin-right: 29px;
 }
- 
- 
+
 .contact {
     margin: 40px 0px 40px 0px;
-    padding: 30px; 
-}
- 
- 
-footer {
-    text-align: center; 
-    margin: 40px 0px; 
-    padding-bottom: 40px; 
+    padding: 30px;
 }
 
-@media (max-width: 800px){
-   
-    
+footer {
+    text-align: center;
+    margin: 40px 0px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 800px) {
     #wrapper {
         width: 800px;
-        height: 400px; 
-        align-items: center; 
+        display: flex;
+        padding: 0px;
     }
-    
-    header {
-     display: fixed; 
-     text-align: center; 
-     
 
-
+    #wrapper nav {
+        width: 100%;
+        flex-direction: column-reverse;
     }
+
+    #wrapper nav li {
+        display: inline-block;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+
+    nav a {
+        padding: 0px 10px 0px 10px;
+        margin: 10px;
+    }
+
     nav .logo {
         display: inline-block;
-        align-content: center; 
+        align-content: center;
         margin-left: auto;
-        margin-right: auto; 
-        
-       
-    }   
-    
-    
-
-
-    header nav {
-        width: 800px;
-        height: 180px;
-        display: block; 
-      
-         
-       
-
+        margin-right: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
-    header nav a {
-        display: fixed;
-        font-weight: 200px;
-        margin: 30px 10px 30px 10px; 
-        padding: 10px;
-        width: 100px;
-    }
-
-   
-        
-  
-    header .iov {
+    /* #wrapper nav li {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        border: 1px black dotted;
+        position: relative; 
+        padding: -12px 0px 0px 0px;  
+        margin: 0;
         text-align: center; 
-        vertical-align: middle; 
-        margin-top: 120px; 
+    } */
+
+    /* Header Innovation on Demand and Image */
+
+    header {
+        display: fixed;
+        text-align: center;
+        padding: 0px;
     }
 
+    header .iov {
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 120px;
+    }
+
+    .iov h1 {
+        text-align: center;
+    }
+
+    .button {
+        align-items: center;
+    }
+
+    .containerforimage {
+        display: none;
+    }
     .header-image {
-        display: none; 
-        background: none; 
+        display: none;
+        background: none;
+        margin: none;
     }
 
     .topContent {
-        margin: 10px 10px 10px 10px; 
-        
+        margin: 10px 10px 10px 10px;
     }
-    
+
     .topContent .features {
-        padding: 20px 10px 20px 10px; 
+        padding: 20px 10px 20px 10px;
     }
 
     .topContent .about {
-        padding: 20px 10px 20px 10px; 
+        padding: 20px 10px 20px 10px;
     }
 
     .middle-img {
-        padding: 20px 10px 20px 10px; 
-        align-content: center; 
+        padding: 20px 10px 20px 10px;
+        align-content: center;
     }
 
     h2 {
@@ -320,99 +392,121 @@ footer {
     }
 
     p {
-        padding: 2px; 
+        padding: 2px;
     }
 
-    .topContent .services {
-        padding: 20px 0px 20px 0px; 
-        width: 15px;
+    /* Bottom Content */
+
+    .bottonContent {
+        align-items: space-evenly;
+        display: flex;
+        flex-direction: row;
     }
 
-    .topContent .product {
-        padding: 20px 0px 20px 0px; 
-        width: 15px;
+    .bottomContent .services {
+        margin-left: 8px;
     }
 
-    .topContent .vision {
-        padding: 20px 0px 20px 0px; 
-        width: 15px;
+    .bottomContent .product {
+        margin-left: 8px;
     }
 
+    .bottomContent .vision {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
     .contact {
-        margin:40px 10px 40px 10px;
-
+        margin: 40px 10px 40px 10px;
     }
 
     .footer {
-        margin: 20px 10px 20px 10px; 
+        margin: 20px 10px 20px 10px;
         padding: 20px 10px 20px 10px;
-        font: 40%; 
+        font: 40%;
         height: 30px;
     }
 }
 
-
-
-@media (max-width: 500px){
-
+@media (max-width: 500px) {
     #wrapper {
-        width: 500px; 
-    }
-   
-   
-
-    header nav {
         width: 500px;
-        height: 300px;
-        display: flex; 
-        flex-direction: column-reverse;
-        
-         
-        
-    }
-
-    header nav a {
-        margin: 5px 0px 5px 0px;
-        padding: 5px 10px 5px 10px;
         display: flex;
-        flex-direction: row;
-        margin-left: auto; 
-        margin-right: auto ; 
-        width: 8em;
-        align-content: center;  
-        
+        padding: 0px;
     }
 
-    nav .logo {
-        display: inline-block; 
-        align-content: center; 
-        margin-left: auto;
-        margin-right: auto; 
-    
+    #wrapper nav {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    header .iov {
-        text-align: center; 
-        position: relative; 
-        top: 200px; 
+    #wrapper nav li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 1px black dotted;
+        position: relative;
+        padding: -12px 0px 0px 0px;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Header Innovation on Demand and Image */
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+        padding: ;
+    }
+
+    .iov {
+        display: inline-flex;
+        padding: 0px;
+        justify-content: center;
+    }
+
+    .iov h1 {
+        font-size: 90px;
+
+        text-align: center;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerforimage {
+        display: none;
+    }
+
+    .header-image {
+        display: none;
     }
 
     .topContent {
-        position: relative; 
-        top: 160px; 
+        position: relative;
+        top: 140px;
+        bottom: 50px;
         padding: 0px;
         margin: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topContent .features {
+        width: 100%;
+        margin-right: none;
+    }
+
+    .topContent .about {
+        width: 100%;
     }
 
     .middle-img {
-        margin: 200px 0px 0px 0px; 
-    }
-
-    .bottomContent {
-        position: relative;
-        padding: 0px; 
-        margin: 0px; 
-        top: 80px;
+        margin: 150px 0px 0px 0px;
     }
 
     h2 {
@@ -421,39 +515,48 @@ footer {
 
     p {
         padding: 0;
-        
+    }
+
+    /* Bottom Content */
+
+    .bottomContent {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        top: 80px;
+        flex-direction: column;
     }
 
     .bottomContent .services {
-        margin-left:5px;
-        margin-right: 10px;
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
     }
 
     .bottomContent .product {
-        margin-right: 10px; 
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
     }
 
     .bottomContent .vision {
-        margin-right: 10px;
-        
+        margin: 10px;
+        width: 100%;
+        padding: 10px;
     }
 
     .contact {
-        text-align: center; 
-        top: 400px; 
-        margin: 80px 0px 80px 0px; 
-        padding: 20px; 
-        
+        text-align: left;
+        top: 600px;
+        margin: 80px 0px 80px 0px;
+        padding: 20px;
     }
     footer {
-        top: 100px; 
+        top: 100px;
     }
     address {
-        margin: 10px; 
-        padding: 10px; 
-        top: 20px; 
+        margin: 20px 0px 20px 0px;
+        padding: 0px;
+        top: 20px;
     }
-
-
-
 }
